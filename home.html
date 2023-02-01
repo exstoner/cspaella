@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link rel="stylesheet" href="/css/home.css" type="text/css"/>
+    <title>Casa Paëlla</title>
+  </head>
+  <body>
+    <!-- start of showcase section -->
+    <section class="showcase">
+      <!-- start of header -->
+      <header>
+        <!-- logo heading -->
+        <!-- <h2 class="logo" style="color:#e70c08;">Casa Paella</h2> -->
+        <img src="/assets/imgs/logo_light.png" alt="">
+        <!-- toggle button -->
+        <div class="toggle"></div>
+      </header>
+      <!-- end of header -->
+
+      <!-- video element, autoplay, muted and loop -->
+      <video src="/assets/clips/home_video.mp4" muted loop autoplay></video>
+
+      <!-- overlay div -->
+      <div class="overlay"></div>
+
+      <!-- start of text div -->
+      <div class="text">
+        <!-- main heading -->
+        <h2>un voyage culinaire</h2>
+        <!-- subheading -->
+        <h3>
+          en Espagne
+          <img class="spain_logo"
+            src="https://img.icons8.com/doodle/48/null/spain-2.png"
+          />
+        </h3>
+        <!-- text -->
+        <p>
+          Venez découvrir le meilleur de la cuisine espagnole à Rabat.
+          Spécialisé dans la préparation de la délicieuse paella, nous vous
+          garantissons des saveurs authentiques et un service chaleureux.
+          Réservez dès maintenant votre command et venez vous régaler avec notre
+          paella faite à la main avec les ingrédients frais et de qualité
+          supérieure.
+        </p>
+        <!-- link -->
+        <a href="/menu.html">Menu</a>
+      </div>
+      <!-- end of text div -->
+
+      <!-- start of social media links -->
+      <ul class="social">
+        <!-- facebook link -->
+        <li>
+          <a href="#"><img src="/assets/icons/facebook.png" /></a>
+        </li>
+        <!-- instagram link -->
+        <li>
+          <a href="#"><img src="/assets/icons/instagram.png" /></a>
+        </li>
+        <!-- instagram link -->
+        <li>
+          <a href="#"><img src="/assets/icons/tiktok.png" /></a>
+        </li>
+      </ul>
+      <!-- end of social media links -->
+    </section>
+    <!-- end of showcase section -->
+    <!-- side menu -->
+    <div class="menu">
+      <ul>
+        <li><a href="/about.html"><img src="https://img.icons8.com/ios/50/null/paella.png"/> Notre Paëlla</a></li>
+        <li><a href="/menu.html"><img src="https://img.icons8.com/ios/50/null/fondue.png"/> Nos Prestations</a></li>
+        <li><a href="/reservation.html"><img src="https://img.icons8.com/sf-regular/48/null/mobile-order.png"/> Réservation</a></li>
+        <li><a href="#"><img src="https://img.icons8.com/ios-filled/50/null/salt-bae.png"/> Photos</a></li>
+        <li><a href="#"><img src="https://img.icons8.com/external-linector-lineal-linector/64/null/external-qa-online-shopping-linector-lineal-linector.png"/> Q&A</a></li>
+      </ul>
+    </div>
+    <!-- end of side menu -->
+
+    <script>
+      const menuToggle = document.querySelector(".toggle"); //Selecting the toggle element
+      const showcase = document.querySelector(".showcase"); //Selecting the showcase element
+
+      menuToggle.addEventListener("click", () => {
+        // Adding click event listener to the toggle element
+        menuToggle.classList.toggle("active"); // toggle class active to the toggle element
+        showcase.classList.toggle("active"); // toggle class active to the showcase element
+      });
+    </script>
+  </body>
+</html>
