@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 html,
 body,
 .uk-card-default {
-	background-color: black;
-	color: #666;
-	border-radius: 10px;
-	font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .logo {
     display: block;
     margin: 20px auto;
     text-align: center;
-  }
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -24,8 +24,9 @@ body,
 }
 
 .navbar a {
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
+    font-weight: 400;
     text-decoration: none;
     color: #eee;
     padding: 0 40px;
@@ -43,9 +44,11 @@ body,
 
 
 h1 {
-	font-family: 'Holtwood One SC', serif;
-	color: #e70c08;
-	margin: revert;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #e70c08;
+    margin: revert;
 }
 
 .uk-height-medium {
@@ -53,73 +56,87 @@ h1 {
 }
 
 h4 {
-	font-family: 'Holtwood One SC', serif;
-	color: #e70c08;
-	font-size: 17px;
-	display: flex;
-	justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #e70c08;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
 
 p {
-	padding: 0 15px 0px;
-	margin: 0px 15px 0px;
+    padding: 0 15px 0px;
+    margin: 0px 15px 0px;
 }
 
 p,
 ul {
-	color: white;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
 
 .uk-form-label {
-	color: #ffeb3b;
+    color: #ffeb3b;
 }
 
 .uk-flex-wrap {
-	flex-wrap: wrap;
-	margin: 20px 0px 0px;
+    flex-wrap: wrap;
+    margin: 20px 0px 0px;
 }
 
 .uk-card-default {
-	box-shadow: 0 0px 10px #ffeb3b;
-	margin: 30px;
+    box-shadow: 0 0px 10px #ffeb3b;
+    margin: 30px;
 
 }
 
 .uk-input,
 .uk-select,
 .uk-textarea {
-	background-color: whitesmoke;
-	border-radius: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 .uk-form-label {
-	font-size: 13px;
-	font-family: 'Holtwood One SC', serif;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
-
+.uk-form-horizontal .uk-form-controls {
+    margin-left: 300px;
+}
+@media (min-width: 960px)
+{
+    .uk-form-horizontal .uk-form-label {
+        width: 200px;
+        margin-top: 0px;
+        float: left;
+    }
+}
 .uk-input:focus {
-	border: 3px solid #ffeb3b;
+    border: 3px solid #ffeb3b;
 }
 
 .uk-margin-small-bottom {
-	font-family: 'Holtwood One SC', serif;
-	color: black;
-	background-color: #ffeb3b;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    background-color: #ffeb3b;
+    border-radius: 10px;
 }
 
 .uk-margin-small-bottom:hover {
-	font-family: 'Holtwood One SC', serif;
-	color: white;
-	background-color: #e70c08;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: #e70c08;
 }
+
 .uk-radio {
-	border: 1px solid #e70c08;
+    border: 1px solid #e70c08;
 }
+
 .uk-radio:checked {
-	background-color: #ffeb3b;
-	border-color: #e70c08;
+    background-color: #ffeb3b;
+    border-color: #e70c08;
 }
 
 @media only screen and (max-width: 480px) {
@@ -130,14 +147,73 @@ ul {
     .text {
         font-size: 0.8em;
     }
+
     .navbar a {
-        font-family: 'Holtwood One SC', serif;
-        font-size: 11px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 17px;
         text-decoration: none;
         color: #eee;
         padding: 0 9px;
         height: 100%;
         display: flex;
         align-items: center;
-    
-}}
+
+    }
+
+    .uk-form-label {
+        color: #ffeb3b;
+    }
+
+    .uk-flex-wrap {
+        flex-wrap: wrap;
+        margin: 20px 0px 0px;
+    }
+
+    .uk-card-default {
+        box-shadow: 0 0px 10px #ffeb3b;
+        margin: 30px;
+
+    }
+    .uk-form-horizontal .uk-form-controls {
+        margin-left: 0;
+    }
+
+    .uk-input,
+    .uk-select,
+    .uk-textarea {
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+
+    .uk-form-label {
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .uk-input:focus {
+        border: 3px solid #ffeb3b;
+    }
+
+    .uk-margin-small-bottom {
+        font-family: 'Ubuntu', sans-serif;
+        color: black;
+        background-color: #ffeb3b;
+        border-radius: 10px;
+    }
+
+    .uk-margin-small-bottom:hover {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        background-color: #e70c08;
+    }
+
+    .uk-radio {
+        border: 1px solid #e70c08;
+    }
+
+    .uk-radio:checked {
+        background-color: #ffeb3b;
+        border-color: #e70c08;
+    }
+
+}
