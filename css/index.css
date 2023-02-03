@@ -114,7 +114,7 @@ header .logo {
 
 
 .text a {
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
     font-size: 1em;
     background: #ffeb3b;
@@ -168,8 +168,15 @@ header .logo {
     background-color: #ffeb3b;
 }
 
+.menu ul img{
+    height: 100px;
+    margin-bottom: 150px;
+}
+
 .menu ul {
     position: relative;
+    line-height: 60px;
+    margin-bottom: 250px;
 }
 
 .menu ul li {
@@ -177,7 +184,7 @@ header .logo {
 }
 
 .menu ul li a {
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 20px;
     color: #111;

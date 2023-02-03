@@ -1,39 +1,41 @@
-body 
-{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+body {
     background: #1C1A1A;
 }
-.site
-{
-    font-family: 'Holtwood One SC', sans-serif;
+
+.site {
+    font-family: 'Ubuntu', sans-serif;
+
 }
-.text-logo
-{
-    font-family: 'Holtwood One SC', sans-serif;
-    color: #e70c08;
-    text-shadow: 2px 2px #ffd301;
-    font-size: 50px;
-    padding: 40px 0px;
+
+.logo {
+    display: block;
+    margin: 20px auto;
     text-align: center;
 }
-.text-logo .glyphicon 
-{
-    color: #ffeb3b;
-    text-shadow: 0px 0px #ffeb3b;
+
+.nav {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
 }
-.nav
-{
-   margin-bottom: 40px;
+
+h3 {
+    font-size: 35px;
 }
-.thumbnail img
-{
+
+.thumbnail img {
     background: #1C1A1A;
 }
-.price
-{
+
+.price {
     background: #e70c08;
-    box-shadow: 0 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
     color: #fff;
     text-shadow: 2px 2px #333;
     position: absolute;
@@ -43,8 +45,8 @@ body
     font-size: 20px;
     border-radius: 3px;
 }
-.price:before 
-{
+
+.price:before {
     border: 4px solid transparent;
     border-bottom: 4px solid #e70c08;
     border-left: 4px solid #e70c08;
@@ -53,30 +55,32 @@ body
     right: 1px;
     top: -8px;
 }
-.caption > h1
-{
+
+.caption>h1 {
     color: #e70c08;
     font-size: 18px;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
-{
+
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
     background: #e70c08;
 }
-.nav>li>a:focus, .nav>li>a:hover 
-{
-    color: #e70c08;
-    background-color: #eee;
-}
-.nav>li>a
-{
-    color: #eee;
-    font-size: 18px;
-    text-shadow: 2px 2px #333;
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    color: white;
+    background-color: #e70c08;
 }
 
-.btn-order
-{
+.nav>li>a {
+    color: #eee;
+    font-size: 25px;
+}
+
+.btn-order {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -86,25 +90,34 @@ body
     /* text-shadow: 2px 2px #333; */
     border-radius: 5px;
 }
-.btn-order:hover, .btn-order:focus
-{
+
+.btn-order:hover,
+.btn-order:focus {
     color: #fff;
     background-color: #e70c08;
 }
- a {
+
+a {
     text-decoration: none;
 }
 
 /*  ADMIN */
 
-.admin
-{
+.admin {
     background: #fff;
     padding: 50px;
     border-radius: 10px;
 }
-.help-inline
-{
+
+.help-inline {
     color: red;
 }
 
+
+@media (max-width: 450px) {
+    .nav>li>a {
+        color: #eee;
+        font-size: 15px;
+        padding: 0px 5px;
+    }
+}

@@ -5,16 +5,23 @@
 		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/cspaela/css/menu.css" type="text/css"/>
+		<link rel="stylesheet" href="/css/menu.css" type="text/css"/>
 		<title>Menu</title>
 	</head>
 	<body>
+		
 		<div class="container site">
-                <!-- toggle button -->
-        <div class="toggle"></div>
-			<h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span>Casa Paëlla<span class="glyphicon glyphicon-cutlery"></span></h1>
-        
+			<img class="logo" src="/assets/imgs/logo_light.png" alt="" />
+			<!-- NavBAr -->
+		<nav>
+			<ul class="nav nav-pills">
+				<li role="presentation" ><a href="/index.html" data toggle= "tab">Accueil</a></li>
+				<li role="presentation" ><a href="/about.html" data toggle= "tab">Notre Histoire</a></li>
+				<li role="presentation" ><a href="/reservation.html" data toggle= "tab">Demande De Devis</a></li>
+				<li role="presentation" ><a href="#" data toggle= "tab">Q&A</a></li>
+			</ul>
+		</nav>
+		<!-- End NavBAr -->
            
 			
 			<div class="tab-content">
@@ -25,15 +32,7 @@
 				</div>
 			</div>
 
-            <nav>
-				<ul class="nav nav-pills">
-					<li role="presentation"  class="active"><a href="" data toggle= "tab">Nos Prestations</a></li>
-					<li role="presentation" ><a href="/cspaela/about.html" data toggle= "tab">Notre Paëlla</a></li>
-					<li role="presentation" ><a href="#" data toggle= "tab">Photos</a></li>
-					<li role="presentation" ><a href="#" data toggle= "tab">Contact</a></li>
-					<li role="presentation" ><a href="#" data toggle= "tab">Q&A</a></li>
-				</ul>
-			</nav>
+            
 
  
 
@@ -76,7 +75,7 @@ for(var i = 0; i < menuArray.length; i++) {
 	var priceH4 = document.createElement("h4")
 	var image = document.createElement("img")
 	var btn = document.createElement("a")
-	btn.href = "/cspaela/reservation.html" 
+	btn.href = "/assets/reservation.html" 
 	var icon = document.createElement("glyphicon")
 
 
@@ -106,7 +105,7 @@ for(var i = 0; i < menuArray.length; i++) {
 	idH1.appendChild(tid)
 	nameH3.appendChild(tName)
 	descriptionH5.appendChild(tDescription)
-	priceH4.appendChild(tPrice)
+	//priceH4.appendChild(tPrice)
 	btn.appendChild(icon)
 	btn.appendChild(tButton)
 	
