@@ -155,6 +155,9 @@ header .logo {
     transform: scale(0.5) translateY(-15px);
 }
 
+
+
+
 .menu {
     position: absolute;
     top: 0;
@@ -192,6 +195,15 @@ header .logo {
 .menu ul li a:hover {
     color: #e70c08;
 }
+
+/* Menu */
+
+/* End Menu */
+
+
+
+
+/* Responsive  */
 
 @media (max-width: 991px) {
 
