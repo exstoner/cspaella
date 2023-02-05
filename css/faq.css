@@ -4,7 +4,7 @@ html {
     background-color: #1C1A1A;
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    
+
 }
 
 /* Header */
@@ -109,6 +109,7 @@ h2 {
     border-radius: 22px;
     color: #ffeb3b;
 }
+
 .accordion button .icon:hover {
     color: #e70c08;
 }
@@ -164,6 +165,79 @@ h2 {
     margin: 2em 0;
 }
 
+/* Image Gallery */
+
+.gallerys {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: white;
+}
+
+.heading span {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem #ffeb3b;
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+/*
+  
+  The following rule will only run if your browser supports CSS grid.
+  
+  Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+  
+  */
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+
 
 /* responsive */
 
@@ -179,5 +253,10 @@ h2 {
         display: flex;
         align-items: center;
 
+    }
+    .container {
+        margin: 0 auto;
+        width: 22rem;
+        padding-left: 20px;
     }
 }
