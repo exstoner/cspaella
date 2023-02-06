@@ -14,7 +14,6 @@ html {
     margin: 20px auto;
     text-align: center;
     height: 150px;
-    /* margin-left: 25px; */
 
 }
 
@@ -166,6 +165,7 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     margin: 2em 0;
+    margin: 10px;
 }
 
 /* Image Gallery */
@@ -173,7 +173,6 @@ h2 {
 .gallerys {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 0 2rem 2rem;
     min-height: 100vh;
     box-sizing: border-box;
 }
