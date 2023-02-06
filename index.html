@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <link href="css/index.css" media="all" rel="stylesheet" type="text/css"/>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <link href="css/index.css" media="all" rel="stylesheet" type="text/css" />
     <title>Casa Paëlla</title>
   </head>
   <body>
@@ -13,8 +16,9 @@
       <!-- start of header -->
       <header>
         <!-- logo heading -->
-        <!-- <h2 class="logo" style="color:#e70c08;">Casa Paella</h2> -->
-        <img src="assets/imgs/logo_light.png" alt="">
+        <a href="index.html"
+          ><img class="logo" src="assets/imgs/logo_white.png" alt=""
+        /></a>
         <!-- toggle button -->
         <div class="toggle"></div>
       </header>
@@ -22,8 +26,8 @@
 
       <!-- video element, autoplay, muted and loop -->
       <video poster="" playsinline autoplay muted loop>
-        <source src="assets/clips/home_video.mp4" type="video/mp4">
-    </video>
+        <source src="assets/clips/home_video.mp4" type="video/mp4" />
+      </video>
 
       <!-- overlay div -->
       <div class="overlay"></div>
@@ -35,7 +39,8 @@
         <!-- subheading -->
         <h3>
           en Espagne
-          <img class="spain_logo"
+          <img
+            class="spain_logo"
             src="https://img.icons8.com/doodle/48/null/spain-2.png"
           />
         </h3>
@@ -72,21 +77,29 @@
     </section>
     <!-- end of showcase section -->
 
-
-
     <!-- footer start -->
-    <footer style="background-color:#1C1A1A; color: #fff; padding: 20px; text-align: center;">
-      <img class="logo" src="assets/imgs/logo_light.png" alt="" />
-      <p>Copyright &copy; 2023 Casapaella</p>
+    <footer
+      style="
+        background-color: #1c1a1a;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      "
+    >
+      <a href="index.html"
+        ><img class="logo" src="assets/imgs/logo_white.png" alt=""
+      /></a>
+      <p style="font-family: 'Poppins', sans-serif">
+        Copyright &copy; 2023 Casapaella
+      </p>
       <!-- add contact page link -->
     </footer>
     <!-- end footer start -->
 
     <!-- side menu -->
     <div class="menu">
-        
       <ul>
-        <img src="assets/imgs/logo_dark.png" alt="">
+        <img src="assets/imgs/logo_dark.png" alt="" />
         <li><a href="about.html">Notre Histoire</a></li>
         <li><a href="menu.html">Nos Paëlla </a></li>
         <li><a href="reservation.html">Réservation </a></li>
@@ -95,15 +108,15 @@
     </div>
     <!-- end of side menu -->
 
-    
-
-
-
-
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Side Menu Script -->
     <script>
       const menuToggle = document.querySelector(".toggle"); //Selecting the toggle element
       const showcase = document.querySelector(".showcase"); //Selecting the showcase element
@@ -114,7 +127,6 @@
         showcase.classList.toggle("active"); // toggle class active to the showcase element
       });
     </script>
-    
-    
+    <!-- Side Menu Script -->
   </body>
 </html>

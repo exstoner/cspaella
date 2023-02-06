@@ -29,7 +29,7 @@ header .logo {
     position: relative;
     width: 60px;
     height: 60px;
-    background: url(/assets/icons/menu_rounded.png);
+    background: url(https://raw.githubusercontent.com/exstoner/cspaella/main/assets/icons/menu_rounded.png);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: center;
@@ -37,7 +37,7 @@ header .logo {
 }
 
 .toggle.active {
-    background: url(/assets/icons/menu-cancel.png);
+    background: url(https://raw.githubusercontent.com/exstoner/cspaella/main/assets/icons/menu-cancel.png);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: center;
@@ -109,6 +109,7 @@ header .logo {
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
+    
 }
 
 
@@ -171,7 +172,7 @@ header .logo {
 }
 
 .menu ul img{
-    height: 100px;
+    height: 150px;
     margin-bottom: 150px;
 }
 
@@ -188,7 +189,7 @@ header .logo {
 .menu ul li a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     color: #111;
 }
 
@@ -207,9 +208,11 @@ header .logo {
 
 @media (max-width: 991px) {
 
-    .showcase,
-    .showcase header {
-        padding: 40px;
+    .showcase, .showcase header {
+        padding: 10px;
+    }
+    .logo {
+        height: 150px;
     }
 
     .text h2 {
@@ -231,3 +234,4 @@ header .logo {
         display: none;
     }
 }
+
