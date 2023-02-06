@@ -217,7 +217,11 @@ header .logo {
     img.logo {
         height: 150px;
     }
-    
+    .menu ul img {
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
 
     .text h2 {
         font-size: 3em;
