@@ -23,6 +23,7 @@ header .logo {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    height: 180px;
 }
 
 .toggle {
@@ -85,6 +86,7 @@ header .logo {
     position: relative;
     z-index: 10;
     font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
 }
 
 .text h2 {
@@ -173,7 +175,7 @@ header .logo {
 
 .menu ul img{
     height: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 140px;
 }
 
 .menu ul {
@@ -206,14 +208,16 @@ header .logo {
 
 /* Responsive  */
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
 
     .showcase, .showcase header {
         padding: 10px;
     }
-    .logo {
+
+    img.logo {
         height: 150px;
     }
+    
 
     .text h2 {
         font-size: 3em;
@@ -228,9 +232,6 @@ header .logo {
     }
 
     .spain_logo {
-        /* width: 32px;
-        height: 70px;
-        margin: 0px 0px -17px */
         display: none;
     }
 }
