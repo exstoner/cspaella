@@ -54,7 +54,7 @@
           supérieure.
         </p>
         <!-- link -->
-        <a href="menu.html">Menu</a>
+        <a href="#presentation">Menu</a>
       </div>
       <!-- end of text div -->
 
@@ -77,6 +77,84 @@
     </section>
     <!-- end of showcase section -->
 
+    <!-- About -->
+
+    <section id="sec">
+      <h2>Notre Service Traiteur est là pour vous!</h2>
+      <p>
+        Casa Paella vous concocte avec amour ses spécialités ibériques à
+        emporter.Parmi les meilleures du genre à Paris, nos différentes paellas
+        cuisinées à la mode espagnole réchaufferont vos repas entre amis ou en
+        famille.En accord avec notre cuisine traditionnelle nous avons
+        sélectionné une gamme de vin tout droit venu d’Espagne. Une prestation
+        traiteur a Rabat ? Une réunion en famille ? Un anniversaire ? Un repas
+        d’entreprise ? Réunissez-vous autour de nos savoureux mets aux saveurs
+        d’Espagne pour un voyage gustatif garanti. OLE !
+      </p>
+    </section>
+    <!-- End About -->
+    <section id="top">
+      <img
+        class="top-img"
+        src="/assets/imgs/background_gif.gif"
+        id="bg"
+      />
+      <h2 id="text">ENVIE D'UNE DÉLICIEUSE PAËLLA LIVRÉE CHEZ VOUS!</h2>
+    </section>
+    <!-- Cards -->
+    <ul class="cards" id="presentation">
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--fence"></div>
+          <div class="card__content">
+            <div class="card__title">Paëlla Royale</div>
+            <p class="card__text">
+              Base + 1/2 homard par personne, poulet, fruits de mer, gambas,
+              moules, palourdes, calamar, chorizo
+            </p>
+            <a class="btn btn--block card__btn" href="reservation.html">Commandez</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--river"></div>
+          <div class="card__content">
+            <div class="card__title">Paëlla Fruits de Mer</div>
+            <p class="card__text">
+              Base + Fruits de mer, gambas, langoustines, moules, palourdes,
+              calamar, poisson (colin, saumon)
+            </p>
+            <a class="btn btn--block card__btn" href="reservation.html">Commandez</a>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--record"></div>
+          <div class="card__content">
+            <div class="card__title">Paëlla Mixte</div>
+            <p class="card__text">
+              Base + Poulet, chorizo, fruits de mer, gambas, langoustines,
+              moules, palourdes, calamar
+            </p>
+            <a class="btn btn--block card__btn" href="reservation.html">Commandez</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- End Cards -->
+
+<!-- footer Nav -->
+<nav class="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="menu.html" >Nos Paëllas</a>
+  <a href="reservation.html">Demande De Devis</a>
+  <a href="faq.html">Q&A</a>
+</nav>
+<!-- End footer Nav -->
+
+
     <!-- footer start -->
     <footer
       style="
@@ -87,8 +165,7 @@
       "
     >
       <a href="index.html"
-        ><img style="
-        height: 100px;" src="assets/imgs/logo_white.png" alt=""
+        ><img style="height: 100px" src="assets/imgs/logo_white.png" alt=""
       /></a>
       <p style="font-family: 'Poppins', sans-serif">
         Copyright &copy; 2023 Casapaella
@@ -96,6 +173,52 @@
       <!-- add contact page link -->
     </footer>
     <!-- end footer start -->
+
+    <!--Waves Container-->
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(255, 235, 59,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(231, 12, 8,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(255, 235, 59,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="7"
+            fill="rgba(231, 12, 8, 1)"
+          />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
 
     <!-- side menu -->
     <div class="menu">
@@ -117,17 +240,14 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <!-- Side Menu Script -->
     <script>
-      const menuToggle = document.querySelector(".toggle"); //Selecting the toggle element
-      const showcase = document.querySelector(".showcase"); //Selecting the showcase element
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
 
-      menuToggle.addEventListener("click", () => {
-        // Adding click event listener to the toggle element
-        menuToggle.classList.toggle("active"); // toggle class active to the toggle element
-        showcase.classList.toggle("active"); // toggle class active to the showcase element
-      });
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
     </script>
-    <!-- Side Menu Script -->
   </body>
 </html>
