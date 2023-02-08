@@ -256,13 +256,13 @@ body{
     padding: 100px;
     padding-bottom: 20px;
 }
-#sec::before {
+.showcase::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -6px;
+    left: 0px;
     height: 200px;
-    width: 100%;
+    width: 101%;
     background: linear-gradient(to top, #1C1A1A, transparent);
     z-index: 1000;
 }
